@@ -1,0 +1,522 @@
+/* FresnelCalculator.css */
+
+.calculator-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);
+  padding: 1rem;
+}
+
+.calculator-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.header-icon {
+  font-size: 1.75rem;
+  color: #2563eb;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin: 0;
+}
+
+.header-subtitle {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* Formula Card */
+.formula-card {
+  background: #dbeafe;
+  border: 1px solid #93c5fd;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.formula-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: none;
+  border: none;
+  color: #1e40af;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.formula-toggle:hover {
+  color: #1e3a8a;
+}
+
+.formula-title {
+  flex: 1;
+  text-align: left;
+  font-weight: 500;
+}
+
+.formula-arrow {
+  font-size: 0.875rem;
+}
+
+.formula-content {
+  padding: 0 1rem 1rem 1rem;
+  text-align: center;
+}
+
+.formula-display {
+  font-family: "Courier New", monospace;
+  font-size: 1.25rem;
+  background: white;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  margin-bottom: 0.5rem;
+}
+
+.formula-description {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Two Column Layout */
+.two-column-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .two-column-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Cards */
+.data-card,
+.result-card,
+.analysis-card,
+.diagram-card,
+.info-card,
+.footer-card {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.card-icon {
+  font-size: 1.25rem;
+}
+
+.card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.card-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Input Styles */
+.input-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.input-field {
+  height: 2.5rem;
+  padding: 0 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Sections */
+.frequency-section,
+.antenna-section,
+.obstacle-section {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.frequency-section {
+  background: #f9fafb;
+}
+
+.antenna-section {
+  background: #eff6ff;
+}
+
+.obstacle-section {
+  background: #f9fafb;
+}
+
+.section-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1f2937;
+  margin: 0 0 0.5rem 0;
+}
+
+/* Frequency Badges */
+.frequency-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.frequency-badge {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  background: white;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.frequency-badge:hover {
+  background: #eff6ff;
+}
+
+/* Error Message */
+.error-message {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+
+.error-message p {
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* Result Card */
+.result-card {
+  background: #eff6ff;
+  border: 1px solid #93c5fd;
+}
+
+.result-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.result-label {
+  font-size: 0.875rem;
+  color: #1d4ed8;
+  margin: 0 0 0.5rem 0;
+}
+
+.result-value {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #1e40af;
+  margin-bottom: 0.25rem;
+}
+
+.result-cm {
+  font-size: 1.125rem;
+  color: #1d4ed8;
+}
+
+/* Analysis Card */
+.analysis-card {
+  border-width: 2px;
+}
+
+.analysis-card.approved {
+  background: #f0fdf4;
+  border-color: #86efac;
+}
+
+.analysis-card.rejected {
+  background: #fef2f2;
+  border-color: #fca5a5;
+}
+
+.analysis-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem;
+}
+
+.analysis-icon {
+  font-size: 1.5rem;
+}
+
+.status-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.analysis-card.approved .status-text {
+  color: #166534;
+}
+
+.analysis-card.rejected .status-text {
+  color: #dc2626;
+}
+
+.status-subtitle {
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.analysis-card.approved .status-subtitle {
+  color: #15803d;
+}
+
+.analysis-card.rejected .status-subtitle {
+  color: #dc2626;
+}
+
+.analysis-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  padding: 0 1rem;
+}
+
+.analysis-item {
+  font-size: 0.875rem;
+}
+
+.analysis-label {
+  font-weight: 500;
+  color: #374151;
+  margin: 0 0 0.25rem 0;
+}
+
+.analysis-value {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin: 0;
+}
+
+.analysis-criteria {
+  margin: 0.75rem 1rem 1rem 1rem;
+  padding: 0.5rem;
+  background: white;
+  border-radius: 0.375rem;
+  border: 1px solid #e5e7eb;
+}
+
+.analysis-criteria p {
+  font-size: 0.75rem;
+  color: #374151;
+  margin: 0;
+}
+
+/* Diagram */
+.diagram-container {
+  background: white;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.diagram-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin: 0 0 0.5rem 0;
+  text-align: center;
+}
+
+.diagram-svg {
+  display: block;
+  margin: 0 auto;
+}
+
+.antenna-label,
+.obstacle-label,
+.distance-label {
+  font-size: 12px;
+  fill: #6b7280;
+}
+
+.fresnel-title,
+.fresnel-radius {
+  font-size: 12px;
+  fill: #2563eb;
+  font-weight: 500;
+}
+
+.sixty-percent {
+  font-size: 12px;
+  fill: #16a34a;
+}
+
+.diagram-legend {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #6b7280;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.text-green {
+  color: #16a34a;
+}
+
+.text-red {
+  color: #dc2626;
+}
+
+.text-yellow {
+  color: #d97706;
+}
+
+/* Info Card */
+.info-card {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+}
+
+.info-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.info-icon {
+  color: #d97706;
+  margin-top: 0.125rem;
+}
+
+.info-title {
+  font-weight: 500;
+  color: #92400e;
+  margin: 0 0 0.25rem 0;
+}
+
+.info-description {
+  font-size: 0.75rem;
+  color: #92400e;
+  margin: 0;
+}
+
+/* Footer Card */
+.footer-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+.footer-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0 0 0.25rem 0;
+}
+
+.footer-author {
+  font-weight: 600;
+}
+
+.footer-subtitle {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .calculator-container {
+    padding: 0.5rem;
+  }
+
+  .input-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .frequency-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .analysis-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-title {
+    font-size: 1.25rem;
+  }
+
+  .result-value {
+    font-size: 1.5rem;
+  }
+}
