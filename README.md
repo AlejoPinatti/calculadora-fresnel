@@ -17,7 +17,7 @@ Software libre para calcular el radio de la primera zona de Fresnel en enlaces d
 
 1. Clona o descarga este repositorio:
    \`\`\`
-    git clone https://github.com/AlejoPinatti/calculadora-fresnel-dd.git
+    git clone https://github.com/AlejoPinatti/calculadora-fresnel.git
    \`\`\`
 2. Instala las dependencias:
    \`\`\`
