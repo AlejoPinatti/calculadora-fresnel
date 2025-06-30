@@ -565,7 +565,6 @@ export default function Component() {
             <p className="text-sm text-gray-600">
               Desarrollado por: <span className="font-semibold">Alejo Pinatti</span>
             </p>
-            <p className="text-xs text-gray-500 mt-1">Software libre para cálculos de telecomunicaciones</p>
           </CardContent>
         </Card>
       </div>

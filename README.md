@@ -1,7 +1,5 @@
 # Calculadora de Zona de Fresnel
 
-Software libre para calcular el radio de la primera zona de Fresnel en enlaces de telecomunicaciones.
-
 ## Desarrollado por: Alejo Pinatti
 
 ### Características
