@@ -133,7 +133,6 @@ const FresnelDiagram = ({
           textAnchor="middle"
           className="text-xs fill-blue-600"
         >
-          R = {fresnelRadius.toFixed(3)}m
         </text>
 
         {/* Línea del 60% */}
@@ -457,8 +456,7 @@ export default function Component() {
                   <CardContent className="pt-4">
                     <div className="text-center">
                       <p className="text-sm text-blue-700 mb-2">Radio de la Primera Zona de Fresnel:</p>
-                      <div className="text-3xl font-bold text-blue-800 mb-1">{result.toFixed(2)} m</div>
-                      <div className="text-lg text-blue-700">{(result * 100).toFixed(0)} cm</div>
+                      <div className="text-3xl font-bold text-blue-800 mb-1">{Math.floor(result * 100) / 100} m</div>
                     </div>
                   </CardContent>
                 </Card>
@@ -493,7 +491,7 @@ export default function Component() {
                         <div>
                           <p className="font-medium text-gray-700">Altura de Fresnel:</p>
                           <p className="text-lg font-bold text-gray-800">
-                            {analysis.fresnelHeightAtObstacle.toFixed(3)} m
+                          <div className="text-3xl font-bold text-blue-800 mb-1">{Math.floor(result * 100) / 100} m</div>
                           </p>
                         </div>
                         <div>
