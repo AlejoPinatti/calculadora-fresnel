@@ -49,9 +49,6 @@ Donde:
 
 Para que un enlace sea considerado viable, se requiere que al menos el 60% de la primera zona de Fresnel esté libre de obstáculos.
 
-### Licencia
-
-MIT License - Software libre
 
 ### Tecnologías
 
