@@ -385,11 +385,8 @@ export default function Component() {
 
                 {/* Altura de antenas */}
                 <div className="bg-blue-50 p-3 rounded-lg">
-                  <h3 className="font-medium text-gray-800 mb-2 text-sm">Altura de Antenas</h3>
+                  <h3 className="font-medium text-gray-800 mb-2 text-sm">Altura de Ambas Antenas (m)</h3>
                   <div className="space-y-2">
-                    <Label htmlFor="antennaHeight" className="text-sm font-medium">
-                      Altura de Ambas Antenas (m)
-                    </Label>
                     <Input
                       id="antennaHeight"
                       type="number"
