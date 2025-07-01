@@ -451,16 +451,6 @@ export default function Component() {
           <div className="space-y-4">
             {result !== null && !error && (
               <>
-                {/* Resultado básico */}
-                <Card className="bg-blue-50 border-blue-200">
-                  <CardContent className="pt-4">
-                    <div className="text-center">
-                      <p className="text-sm text-blue-700 mb-2">Radio de la Primera Zona de Fresnel:</p>
-                      <div className="text-3xl font-bold text-blue-800 mb-1">{Math.floor(result * 100) / 100} m</div>
-                    </div>
-                  </CardContent>
-                </Card>
-
                 {/* Análisis de obstáculos */}
                 {analysis && (
                   <Card
